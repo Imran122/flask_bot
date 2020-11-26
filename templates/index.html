@@ -61,6 +61,7 @@
             document.querySelector(".chat-thread").appendChild(node);
             $("#chat-window-message").prop('disabled', false);
             $("#chat-window-message").focus();
+            $('#chat-window-message').removeAttr('placeholder');
           });
         }
       });
