@@ -72,7 +72,7 @@ body {
 
 .chat-thread li:nth-child(odd):before {
   right: -80px;
-  background-image: url("robot-icon.jpg")
+  background-image: url("profile.png");
 }
 
 .chat-thread li:nth-child(odd):after {
@@ -91,7 +91,7 @@ body {
 
 .chat-thread li:nth-child(even):before {
   left: -80px;
-  background-image: url("bot.png");
+  background-image: url("girl.png");
   background-size: 50px;
 }
 
@@ -115,13 +115,14 @@ body {
   border: 0;
   border-bottom: 1px solid rgba(25, 147, 147, 0.2);
   outline: none;
+  margin-bottom: 40px;
 }
 
 /* Small screens */
 @media all and (max-width: 767px) {
   .chat-thread {
-    width: 90%;
-    height: 260px;
+    width: 80%;
+    height: 70%;
   }
 
   .chat-window {
@@ -132,8 +133,8 @@ body {
 /* Medium and large screens */
 @media all and (min-width: 768px) {
   .chat-thread {
-    width: 50%;
-    height: 320px;
+    width: 80%;
+    height: 70%;
   }
 
   .chat-window {

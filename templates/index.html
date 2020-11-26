@@ -54,11 +54,14 @@
           node.appendChild(textNode);
           document.querySelector(".chat-thread").appendChild(node);
           $("#chat-window-message").val('');
+          $("#chat-window-message").prop('disabled', true);
           req.done(function (data) {
             var node = document.createElement("li");
             var textNode = document.createTextNode(data.bot_response);
             node.appendChild(textNode);
             document.querySelector(".chat-thread").appendChild(node);
+            $("#chat-window-message").prop('disabled', false);
+            $("#chat-window-message").focus();
           });
         }
       });
