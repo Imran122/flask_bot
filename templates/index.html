@@ -62,6 +62,8 @@
             $("#chat-window-message").prop('disabled', false);
             $("#chat-window-message").focus();
             $('#chat-window-message').removeAttr('placeholder');
+            var $target = $('html,body'); 
+            $target.animate({scrollTop: $target.height()}, 1000);
           });
         }
       });
