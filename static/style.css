@@ -130,6 +130,10 @@ body {
     left: 5%;
     width: 90%;
   }
+  
+  .chat-window-message {
+    margin-top: 100px;
+  }
 }
 /* Medium and large screens */
 @media all and (min-width: 768px) {
